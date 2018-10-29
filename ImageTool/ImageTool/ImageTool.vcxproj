@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4BA85C83-FD42-458F-A1C1-6DBC9AC4B341}</ProjectGuid>
+    <ProjectGuid>{B8CC4E6E-7DAA-45B2-9337-9BAED56372A4}</ProjectGuid>
     <RootNamespace>ImageTool</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <Keyword>MFCProj</Keyword>

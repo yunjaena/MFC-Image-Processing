@@ -26,7 +26,6 @@ public:
 	virtual int ExitInstance();
 
 // 구현입니다.
-	UINT  m_nAppLook;
 	BOOL  m_bHiColorIcons;
 
 	virtual void PreLoadState();

@@ -66,13 +66,6 @@ BOOL CImageToolApp::InitInstance()
 	// InitCommonControlsEx()를 사용하지 않으면 창을 만들 수 없습니다.
 	INITCOMMONCONTROLSEX InitCtrls;
 	InitCtrls.dwSize = sizeof(InitCtrls);
-
-	CCommandLineInfo cmdInfo;
-	ParseCommandLine(cmdInfo);
-
-	if (cmdInfo.m_nShellCommand == CCommandLineInfo::FileNew)
-		cmdInfo.m_nShellCommand = CCommandLineInfo::FileNothing;
-
 	// 응용 프로그램에서 사용할 모든 공용 컨트롤 클래스를 포함하도록
 	// 이 항목을 설정하십시오.
 	InitCtrls.dwICC = ICC_WIN95_CLASSES;
@@ -80,6 +73,11 @@ BOOL CImageToolApp::InitInstance()
 
 	CWinAppEx::InitInstance();
 
+	CCommandLineInfo cmdInfo;
+	ParseCommandLine(cmdInfo);
+
+	if (cmdInfo.m_nShellCommand == CCommandLineInfo::FileNew)
+		cmdInfo.m_nShellCommand = CCommandLineInfo::FileNothing;
 
 	// OLE 라이브러리를 초기화합니다.
 	if (!AfxOleInit())
@@ -90,7 +88,7 @@ BOOL CImageToolApp::InitInstance()
 
 	AfxEnableControlContainer();
 
-	EnableTaskbarInteraction();
+	EnableTaskbarInteraction(FALSE);
 
 	// RichEdit 컨트롤을 사용하려면  AfxInitRichEdit2()가 있어야 합니다.	
 	// AfxInitRichEdit2();
@@ -141,6 +139,7 @@ BOOL CImageToolApp::InitInstance()
 	// 끌어서 놓기에 대한 열기를 활성화합니다.
 	m_pMainWnd->DragAcceptFiles();
 
+	// 표준 셸 명령, DDE, 파일 열기에 대한 명령줄을 구문 분석합니다.
 
 	// DDE Execute 열기를 활성화합니다.
 	EnableShellOpen();

@@ -58,9 +58,10 @@ void CImageToolView::OnDraw(CDC* pDC)
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
+
+	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
 	if (pDoc->m_Dib.IsValid())
 		pDoc->m_Dib.Draw(pDC->m_hDC);
-	// TODO: 여기에 원시 데이터에 대한 그리기 코드를 추가합니다.
 }
 
 void CImageToolView::OnInitialUpdate()
@@ -68,21 +69,9 @@ void CImageToolView::OnInitialUpdate()
 	CScrollView::OnInitialUpdate();
 
 	CSize sizeTotal;
-	CImageToolDoc* pDoc = GetDocument();
-	if (pDoc->m_Dib.IsValid())
-	{
-		sizeTotal.cx = pDoc->m_Dib.GetWidth();
-		sizeTotal.cy = pDoc->m_Dib.GetHeight();
-	}
-	else
-	{
-		sizeTotal.cx = sizeTotal.cy = 100;
-	}
-
+	// TODO: 이 뷰의 전체 크기를 계산합니다.
+	sizeTotal.cx = sizeTotal.cy = 100;
 	SetScrollSizes(MM_TEXT, sizeTotal);
-
-	ResizeParentToFit(TRUE);
-	
 }
 
 

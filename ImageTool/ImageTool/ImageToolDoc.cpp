@@ -152,5 +152,5 @@ BOOL CImageToolDoc::OnOpenDocument(LPCTSTR lpszPathName)
 
 	// TODO:  여기에 특수화된 작성 코드를 추가합니다.
 
-	return m_Dib.Load(CT2A(lpszPathName));;
+	return m_Dib.Load(CT2A(lpszPathName));
 }

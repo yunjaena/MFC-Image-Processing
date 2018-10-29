@@ -145,22 +145,6 @@ BEGIN
             MENUITEM "<자리 표시자>",           ID_VIEW_TOOLBAR
         END
         MENUITEM "상태 표시줄(&S)",                 ID_VIEW_STATUS_BAR
-        POPUP "응용 프로그램 모양(&A)"
-        BEGIN
-            MENUITEM "Windows 2000(&2)",           ID_VIEW_APPLOOK_WIN_2000
-            MENUITEM "Office XP(&X)",              ID_VIEW_APPLOOK_OFF_XP
-            MENUITEM "Windows XP(&W)",             ID_VIEW_APPLOOK_WIN_XP
-            MENUITEM "Office 2003(&3)",            ID_VIEW_APPLOOK_OFF_2003
-            MENUITEM "Visual Studio 200&5",     ID_VIEW_APPLOOK_VS_2005
-            MENUITEM "Visual Studio 200&8",     ID_VIEW_APPLOOK_VS_2008
-            POPUP "Office 2007(&7)"
-            BEGIN
-                MENUITEM "파랑 스타일(&B)",         ID_VIEW_APPLOOK_OFF_2007_BLUE
-                MENUITEM "검정 스타일(&L)",        ID_VIEW_APPLOOK_OFF_2007_BLACK
-                MENUITEM "은색 스타일(&S)",       ID_VIEW_APPLOOK_OFF_2007_SILVER
-                MENUITEM "바다색 스타일(&A)",         ID_VIEW_APPLOOK_OFF_2007_AQUA
-            END
-        END
     END
     POPUP "도움말(&H)"
     BEGIN
@@ -201,26 +185,13 @@ BEGIN
             MENUITEM "<자리 표시자>",           ID_VIEW_TOOLBAR
         END
         MENUITEM "상태 표시줄(&S)",                 ID_VIEW_STATUS_BAR
-        POPUP "응용 프로그램 모양(&A)"
-        BEGIN
-            MENUITEM "Windows 2000(&2)",           ID_VIEW_APPLOOK_WIN_2000
-            MENUITEM "Office XP(&X)",              ID_VIEW_APPLOOK_OFF_XP
-            MENUITEM "Windows XP(&W)",             ID_VIEW_APPLOOK_WIN_XP
-            MENUITEM "Office 2003(&3)",            ID_VIEW_APPLOOK_OFF_2003
-            MENUITEM "Visual Studio 200&5",     ID_VIEW_APPLOOK_VS_2005
-            MENUITEM "Visual Studio 200&8",     ID_VIEW_APPLOOK_VS_2008
-            POPUP "Office 2007(&7)"
-            BEGIN
-                MENUITEM "파랑 스타일(&B)",         ID_VIEW_APPLOOK_OFF_2007_BLUE
-                MENUITEM "검정 스타일(&L)",        ID_VIEW_APPLOOK_OFF_2007_BLACK
-                MENUITEM "은색 스타일(&S)",       ID_VIEW_APPLOOK_OFF_2007_SILVER
-                MENUITEM "바다색 스타일(&A)",         ID_VIEW_APPLOOK_OFF_2007_AQUA
-            END
-        END
     END
     POPUP "창(&W)"
     BEGIN
         MENUITEM "새 창(&N)",                 ID_WINDOW_NEW
+        MENUITEM "계단식 배열(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "바둑판식 배열(&T)",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "아이콘 정렬(&A)",              ID_WINDOW_ARRANGE
     END
     POPUP "도움말(&H)"
     BEGIN
@@ -255,15 +226,6 @@ END
 IDR_HELP_MENU MENU 
 BEGIN
     MENUITEM "ImageTool 정보(&A)...",          ID_APP_ABOUT
-END
-
-IDR_THEME_MENU MENU
-BEGIN
-    MENUITEM "Office 2007(파랑 스타일)(&B)",       ID_VIEW_APPLOOK_OFF_2007_BLUE
-    MENUITEM "Office 2007(검정 스타일)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
-    MENUITEM "Office 2007(은색 스타일)(&S)",     ID_VIEW_APPLOOK_OFF_2007_SILVER
-    MENUITEM "Office 2007(바다색 스타일)(&A)",       ID_VIEW_APPLOOK_OFF_2007_AQUA
-    MENUITEM "Windows 7(&D)",                      ID_VIEW_APPLOOK_WINDOWS_7
 END
 
 /////////////////////////////////////////////////////////////////////////////
