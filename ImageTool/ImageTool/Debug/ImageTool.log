@@ -1,3 +1,12 @@
-﻿  ImageTool.cpp
-  ImageTool.vcxproj -> C:\Users\B206EA01\Desktop\MFC\ImageTool\Debug\ImageTool.exe
-  ImageTool.vcxproj -> C:\Users\B206EA01\Desktop\MFC\ImageTool\Debug\ImageTool.pdb (Partial PDB)
+﻿  stdafx.cpp
+  OutputWnd.cpp
+  MainFrm.cpp
+  IppDib.cpp
+  IppConvert.cpp
+  ImageToolView.cpp
+  ImageToolDoc.cpp
+  ImageTool.cpp
+  ChildFrm.cpp
+  코드를 생성하고 있습니다...
+  ImageTool.vcxproj -> C:\Users\B206EA01\Desktop\MFC-Image-Processing\MFC-Image-Processing\ImageTool\Debug\ImageTool.exe
+  ImageTool.vcxproj -> C:\Users\B206EA01\Desktop\MFC-Image-Processing\MFC-Image-Processing\ImageTool\Debug\ImageTool.pdb (Partial PDB)
