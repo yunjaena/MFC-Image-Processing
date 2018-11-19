@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  ChildFrm.cpp
+  FileNewDlg.cpp
+  ImageTool.cpp
+  ImageToolDoc.cpp
+  ImageToolView.cpp
+  IppEnhancement.cpp
+  IppConvert.cpp
+  IppDib.cpp
+  MainFrm.cpp
+  OutputWnd.cpp
+  코드를 생성하고 있습니다.
+  All 486 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  ImageTool.vcxproj -> D:\바탕 화면\KOREATECH\2학년 2학기\윈도우즈프로그래밍\과제\색반전\ImageTool_Ch_5\Release\ImageTool.exe
+  ImageTool.vcxproj -> D:\바탕 화면\KOREATECH\2학년 2학기\윈도우즈프로그래밍\과제\색반전\ImageTool_Ch_5\Release\ImageTool.pdb (Full PDB)
